@@ -5,9 +5,7 @@
             <div class="mb-5">
                 <form method="POST" action="{{ route('posts') }}">
                   @csrf
-                    <textarea rows="4" name="body" id="message" placeholder="Type your message"
-                        class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md">
-                    </textarea>
+                    <textarea rows="4" name="body" id="message" placeholder="Type your message" class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"></textarea>
                     @error('body')
                       <p class="text-red-700">{{$message}}</p>
                     @enderror
