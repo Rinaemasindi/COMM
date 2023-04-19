@@ -16,6 +16,13 @@
                 </form>
             </div>
     </div>
+    @if ($posts->count())
+        @foreach ($posts as $post)
+            
+        @endforeach
+    @else
+        
+    @endif
         {{-- Posts start here --}}
         <div class="px-5 mt-5 py-4 bg-white shadow rounded-lg max-w-lg">
             <div class="flex mb-4">
